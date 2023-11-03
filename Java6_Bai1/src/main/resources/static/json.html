@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script >
+    var sv =
+        {
+            "name": "Nguyễn Đức Huy",
+            "gender": true,
+            "marks": 8.5,
+            "contact":
+                {
+                    "email": "Huyndph17533@fpt.edu.vn",
+                    "phone": "0987654321"
+                },
+            "subjects": ["WEB205", "COM108"]
+        }
+    // xuất đối tượng
+    console.log(sv);
+
+    // truy xuất các thuộc tính
+    sv.name = sv['name'].toUpperCase();
+    console.log(sv.name, sv.contact.email, sv.subjects[0])
+    // duyệt đối tượng theo key
+    for(var key in sv) {
+        console.log(key, sv[key])
+    }
+
+    // chuyển đối đối tượng JSON sang chuỗi
+    var text = JSON.stringify(sv)
+    console.log(text)
+    // chuyển chuỗi sang đối tượng JSON
+    var obj = JSON.parse(text)
+    console.log(obj)
+
+
+</script>
+
+</body>
+</html>
