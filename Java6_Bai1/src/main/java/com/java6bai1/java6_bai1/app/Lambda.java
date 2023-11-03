@@ -8,10 +8,10 @@ import java.util.List;
 
 public class Lambda {
     public static void main(String[] args) {
-//        demo1();
+        demo1();
 //        demo2();
 //        demo3();
-        demo4();
+//        demo4();
     }
 
     private static void demo4() {

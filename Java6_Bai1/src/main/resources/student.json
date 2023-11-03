@@ -1,0 +1,11 @@
+{
+	"name": "Nguyễn Đức Huy",
+	"gender": true,
+	"marks": 8.5,
+	"contact":
+	{
+		"email": "Huyndph17533@fpt.edu.vn",
+		"phone": "0987654321"
+	},
+	"subjects": ["WEB205", "COM108"]
+}

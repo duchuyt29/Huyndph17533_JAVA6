@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Nguyễn Đức Huy",
+    "gender": true,
+    "marks": 8.5,
+    "contact": {
+      "email": "Huyndph17533@fpt.edu.vn",
+      "phone": "0987654321"
+    },
+    "subjects": [
+      "WEB205",
+      "COM108"
+    ]
+  },
+  {
+    "name": "Nguyễn Hương",
+    "gender": true,
+    "marks": 8.0,
+    "contact": {
+      "email": "huongnt@gmail.com",
+      "phone": "123456789"
+    },
+    "subjects": [
+      "WEB205",
+      "COM108"
+    ]
+  },
+  {
+    "name": "Khổng Minh Thu",
+    "gender": true,
+    "marks": 7.0,
+    "contact": {
+      "email": "thukm@gmail.com",
+      "phone": "987654321"
+    },
+    "subjects": [
+      "WEB205",
+      "COM108"
+    ]
+  }
+]
