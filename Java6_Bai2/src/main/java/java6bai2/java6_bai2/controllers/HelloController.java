@@ -1,0 +1,15 @@
+package java6bai2.java6_bai2.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController {
+	@RequestMapping("/hello.th")
+	public String hello(Model model) {
+		model.addAttribute("message", "FPT <b>Polytechnic</b>");
+		return "hello";
+	}
+	
+}
