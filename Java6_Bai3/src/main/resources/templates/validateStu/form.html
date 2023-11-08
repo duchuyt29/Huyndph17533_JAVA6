@@ -7,7 +7,7 @@
 </head>
 <body>
   <h3>Data Binding</h3>
-  <form action="/student/save" method="POST" th:object="${stu}">
+  <form action="/validate/save" method="POST" th:object="${stuval}">
     <input th:field="*{email}" placeholder="Email Address?">
       <i th:errors="*{email}"></i><br>
     <input th:field="*{fullName}" placeholder="Full Name?">
