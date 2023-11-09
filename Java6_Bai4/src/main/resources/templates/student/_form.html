@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<main class="container-sm">
+    <form th:object="${form}"  class="col-8 mx-auto" method="post">
+
+        <label  class="form-label" for="email">Email address:</label>
+        <input id="email" type="email" class="form-control" th:field="*{email}" placeholder="Enter your email"><br>
+
+        <label   class="form-label" for="fullname">Full Name:</label>
+        <input id="fullname" class="form-control"  th:field="*{fullname}" placeholder="Enter your full name"><br>
+
+        <label  class="form-label" for="marks">Average marks:</label>
+        <input id="marks" class="form-control"  th:field="*{marks}" placeholder="Enter average marks"><br>
+
+        <label>Gender:</label>
+        <input id="male" th:field="*{gender}" type="radio" value="true">
+        <label for="male">Male</label>
+
+        <input id="female" th:field="*{gender}" type="radio" value="false">
+        <label for="female">Female</label><br>
+
+        <label for="country">Select Country:</label><br>
+        <select class="form-select"  id="country" th:field="*{country}">
+            <option value="VN">Viet Nam</option>
+            <option value="US">United States</option>
+        </select>
+        <hr>
+        <button class="create-btn btn btn-success" type="button" th:formaction="@{/student/create}">Create</button>
+        <button class="update-btn btn btn-success" th:formaction="@{|/student/update/${key}|}">Update</button>
+        <button class="delete-btn btn btn-danger" th:formaction="@{|/student/delete/${key}|}">Delete</button>
+        <button class="reset-btn btn btn-warning" th:formaction="@{/student/index}">Reset</button>
+    </form>
+</main>
+</body>
+</html>

@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Java6_Bai4" />
+        <module name="Java6_Bai3" />
         <module name="Java6_Bai2" />
         <module name="Java6_Bai1" />
-        <module name="Java6_Bai3" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="Java6_Bai1" options="-parameters" />
       <module name="Java6_Bai2" options="-parameters" />
       <module name="Java6_Bai3" options="-parameters" />
+      <module name="Java6_Bai4" options="-parameters" />
     </option>
   </component>
 </project>
